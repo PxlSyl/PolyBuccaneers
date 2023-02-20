@@ -4,8 +4,8 @@ import Image from 'next/image'
 import React, { useEffect, useState } from "react";
 import { useSpring, animated } from "react-spring";
 import { useDispatch, useSelector } from "react-redux";
-import { connect } from "./redux/blockchain/blockchainActions";
-import { fetchData } from "./redux/data/dataActions";
+import { connect } from "./../redux/blockchain/blockchainActions";
+import { fetchData } from "./../redux/data/dataActions";
 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,
@@ -114,7 +114,7 @@ export default function Home() {
   };
 
   const getConfig = async () => {
-    const configResponse = await fetch("./config/config.json", {
+    const configResponse = await fetch("/config/config.json", {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
