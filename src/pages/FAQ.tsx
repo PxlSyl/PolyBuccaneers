@@ -12,20 +12,6 @@ function restoreButtonBackground(e: any) {
 const FAQ = () => {
   return (
 
-    <>
-      <div style={{
-        zIndex: -1,
-        position: "fixed",
-        width: "100vw",
-        height: "100vh"
-      }}>
-        <Image
-          src="/images/8BitsBlueBG.jpg"
-          alt="Blue background"
-          fill
-          style={{ objectFit: 'cover' }}
-        />
-      </div>
       <div className="flex flex-col justify-center items-center ">
         <div className='space-y-8 ' />
         <div className='lightcontainer'>
@@ -142,7 +128,6 @@ const FAQ = () => {
           </p>
         </div>
       </div>
-    </>
   );
 }
 

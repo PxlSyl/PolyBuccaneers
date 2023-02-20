@@ -5,20 +5,6 @@ const Rarity = () => {
 
   return (
 
-    <>
-      <div style={{
-        zIndex: -1,
-        position: "fixed",
-        width: "100vw",
-        height: "100vh"
-      }}>
-        <Image
-          src="/images/8BitsBlueBG.jpg"
-          alt="Blue background"
-          fill
-          style={{ objectFit: 'cover' }}
-        />
-      </div>
       <div className="flex flex-col justify-center items-center ">
         <div className='lightcontainer'>
           <h1 className="text-5xl text-bold text-black uppercase inline-flex ">
@@ -505,7 +491,6 @@ const Rarity = () => {
           </table>
         </div>
       </div>
-    </>
   );
 }
 

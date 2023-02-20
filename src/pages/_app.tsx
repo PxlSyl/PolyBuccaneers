@@ -3,7 +3,8 @@ import type { AppProps } from 'next/app'
 import { Provider } from 'react-redux';
 import  store  from './../redux/store';
 
-import Navbar from '@/navigation/navbar'
+import Navbar from '@/navigation/navbar';
+import Nav from '@/navigation/nav';
 import Footer from '@/navigation/footer';
 
 export default function App({ Component, pageProps }: AppProps) {

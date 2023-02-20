@@ -5,7 +5,8 @@
 @tailwind utilities;
 
 html {
-  font-size: 24px
+  font-size: 24px;
+  background-color: #1F85DE;
 }
 
 * {
