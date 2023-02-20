@@ -15,7 +15,7 @@ const calc = (x, y) => [
 const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
-export default function home() {
+export default function Home() {
 
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
@@ -243,7 +243,7 @@ export default function home() {
                 You can still find {CONFIG.NFT_NAME} on
               </p>
               <div className='space-y-4 ' />
-              <a target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
+              <a target={"_blank"} href={CONFIG.MARKETPLACE_LINK} rel="noopener noreferrer">
                 {CONFIG.MARKETPLACE}
               </a>
             </>
