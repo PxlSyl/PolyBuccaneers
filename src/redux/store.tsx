@@ -1,5 +1,5 @@
 import { applyMiddleware, compose, createStore, combineReducers } from "redux";
-
+import { configureStore } from "@reduxjs/toolkit";
 import thunk from "redux-thunk";
 import blockchainReducer from "./blockchain/blockchainReducer";
 import dataReducer from "./data/dataReducer";

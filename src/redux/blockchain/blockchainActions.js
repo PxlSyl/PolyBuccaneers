@@ -4,6 +4,8 @@ import Web3 from "web3";
 // log
 import { fetchData } from "../data/dataActions";
 
+// declare var window : any
+
 const connectRequest = () => {
   return {
     type: "CONNECTION_REQUEST",
@@ -31,6 +33,7 @@ const updateAccountRequest = (payload) => {
   };
 };
 
+
 export const connect = () => {
   return async (dispatch) => {
     dispatch(connectRequest());
@@ -50,6 +53,9 @@ export const connect = () => {
     const CONFIG = await configResponse.json();
     const { ethereum } = window;
     const metamaskIsInstalled = ethereum && ethereum.isMetaMask;
+
+    
+
     if (metamaskIsInstalled) {
       Web3EthContract.setProvider(ethereum);
       let web3 = new Web3(ethereum);

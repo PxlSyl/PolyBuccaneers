@@ -6,7 +6,7 @@ const initialState = {
   errorMsg: "",
 };
 
-const blockchainReducer = (state = initialState, action) => {
+const blockchainReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case "CONNECTION_REQUEST":
       return {

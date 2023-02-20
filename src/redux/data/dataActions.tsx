@@ -7,14 +7,14 @@ const fetchDataRequest = () => {
   };
 };
 
-const fetchDataSuccess = (payload) => {
+const fetchDataSuccess = (payload: any) => {
   return {
     type: "CHECK_DATA_SUCCESS",
     payload: payload,
   };
 };
 
-const fetchDataFailed = (payload) => {
+const fetchDataFailed = (payload: any) => {
   return {
     type: "CHECK_DATA_FAILED",
     payload: payload,
@@ -22,7 +22,7 @@ const fetchDataFailed = (payload) => {
 };
 
 export const fetchData = () => {
-  return async (dispatch) => {
+  return async (dispatch: any) => {
     dispatch(fetchDataRequest());
     try {
       let totalSupply = await store
