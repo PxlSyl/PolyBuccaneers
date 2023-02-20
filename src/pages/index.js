@@ -4,8 +4,8 @@ import Image from 'next/image'
 import React, { useEffect, useState } from "react";
 import { useSpring, animated } from "react-spring";
 import { useDispatch, useSelector } from "react-redux";
-import { connect } from "./../redux/blockchain/blockchainActions";
-import { fetchData } from "./../redux/data/dataActions";
+import { connect } from "../redux/blockchain/blockchainActions";
+import { fetchData } from "../redux/data/dataActions";
 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,
@@ -220,7 +220,7 @@ export default function Home() {
               alt="NFT Display Image"
               style={{
                 boxShadow: '0px 5px 11px 2px rgba(0, 0, 0, 0.7)',
-                backgrounColor: 'grey',
+                backgroundColor: 'grey',
                 borderRadius: '100%'
               }}
             />
