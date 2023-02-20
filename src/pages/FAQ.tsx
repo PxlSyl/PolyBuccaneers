@@ -9,7 +9,7 @@ function restoreButtonBackground(e: any) {
   e.target.style.background = '#FFFFFF80';
 }
 
-export default function FAQ() {
+const FAQ = () => {
   return (
 
     <>
@@ -145,3 +145,5 @@ export default function FAQ() {
     </>
   );
 }
+
+export default FAQ;

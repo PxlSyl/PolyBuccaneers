@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export default function Rarity() {
+const Rarity = () => {
 
   return (
 
@@ -508,3 +508,5 @@ export default function Rarity() {
     </>
   );
 }
+
+export default Rarity;

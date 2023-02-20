@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-export default function Tokenomics() {
+const Tokenomics = () => {
 
   return (
 
@@ -207,3 +207,5 @@ export default function Tokenomics() {
     </>
   );
 }
+
+export default Tokenomics;
