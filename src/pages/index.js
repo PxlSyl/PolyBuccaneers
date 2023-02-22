@@ -230,7 +230,12 @@ export default function Home() {
         <h1 className="text-5xl text-white uppercase inline-flex ">
           -Buccaneers-
         </h1>
-        <p className="text-2xl text-white">{`Claimed: ${data.totalSupply}/${CONFIG.MAX_SUPPLY}`}</p>
+        {blockchain.account === "" ||
+          blockchain.smartContract === null ? (
+          null
+        ) : (
+          <p className="text-2xl text-white">{`Claimed: ${data.totalSupply}/${CONFIG.MAX_SUPPLY}`}</p>
+        )}
         <div className='space-y-8' />
         <div className='lightcontainer' >
           <div className='space-y-4 ' />
